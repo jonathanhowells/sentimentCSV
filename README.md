@@ -12,15 +12,23 @@ Requirements:
 -------------
 
 Stanford CoreNLP version 3.4
+
 Python 2.7
+
 Java 1.7
 
-Libraries
+Libraries:
+
 subprocess
+
 sys
+
 timeit
+
 csv
+
 pandas
+
 numpy
 
 Use:
