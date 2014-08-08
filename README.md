@@ -35,12 +35,11 @@ Use:
 -------------
 •Enter the PATH to Stanford Core NLP Library
 
-•Put csv that you want to convert into the '/sentimentCSV' directory.
+•Move the csv that you want to convert into the '/sentimentCSV' directory.
 
 •In terminal change working directory to '/sentimentCSV'
 
-•Run command:
-python sentimentCSV
+•Run command:  python sentimentCSV
 
 •Type file you want to convert
 
