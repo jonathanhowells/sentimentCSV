@@ -4,7 +4,7 @@ Jonathan Howells 2014
 
 jonathan@theoutsideview.co.uk
 
-Adds a column to a csv with the sentiment of another column using the Stanford Core NLP Library.
+Adds a sentiment column to a csv using the Stanford Core NLP Library.
 
 This code is distributed under the GNU Public license.
 
