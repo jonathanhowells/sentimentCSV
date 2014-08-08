@@ -1,6 +1,7 @@
 sentimentCSV
 ============
 Jonathan Howells 2014
+
 jonathan@theoutsideview.co.uk
 
 Adds a column to a csv with the sentiment of another column using the Stanford Core NLP Library.
@@ -10,6 +11,7 @@ This code is distributed under the GNU Public license.
 Requirements:
 -------------
 
+Stanford CoreNLP version 3.4
 Python 2.7
 Java 1.7
 
