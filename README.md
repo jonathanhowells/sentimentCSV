@@ -33,16 +33,17 @@ numpy
 
 Use:
 -------------
+•Enter the PATH to Stanford Core NLP Library
 
-Put csv that you want to convert into the '/sentimentCSV' directory.
+•Put csv that you want to convert into the '/sentimentCSV' directory.
 
-In terminal change working directory to '/sentimentCSV'
+•In terminal change working directory to '/sentimentCSV'
 
-Run command:
+•Run command:
 python sentimentCSV
 
-Type file you want to convert
+•Type file you want to convert
 
-Type filename of the output file
+•Type filename of the output file
 
-Type the name of the column of which you want to find the sentiment.
+•Type the name of the column of which you want to find the sentiment.
