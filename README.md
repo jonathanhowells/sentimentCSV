@@ -13,6 +13,8 @@ Requirements:
 
 Stanford CoreNLP version 3.4
 
+http://nlp.stanford.edu/software/corenlp.shtml#Download
+
 Python 2.7
 
 Java 1.7
