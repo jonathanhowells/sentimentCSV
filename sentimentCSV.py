@@ -13,9 +13,10 @@ directory = os.getcwd()
 
 os.chdir(directory)
 
-input_filename = raw_input("Enter input filename: ")
-output_filename = raw_input("Enter output filename: ")
+stanford_directory = raw_input("Enter path to Stanford CoreNLP: ")
 
+input_filename = raw_input("Enter input csv filename: ")
+output_filename = raw_input("Enter output csv filename: ")
 text_column = raw_input("Enter text column name: ")
 
 print "Reading file..."
@@ -35,7 +36,7 @@ for comment in comments:
     
 comment_chunks=[comments_clean[x:x+2000] for x in xrange(0, len(comments_clean), 2000)]
 
-input_directory = directory + '/sentiment-engine/input_data'
+input_directory = stanford_directory + '/input_data'
 if not os.path.exists(input_directory):
     os.makedirs(input_directory)
 os.chdir(input_directory)
@@ -53,7 +54,7 @@ for n in range(N):
             f.write(". \n")
     f.close() 
     
-os.chdir(directory + '/sentiment-engine/')
+os.chdir(stanford_directory)
 
 sentiments = ['  Neutral', '  Negative', '  Positive', '  Very positive', '  Very negative']
 
@@ -122,7 +123,7 @@ for n in range(N):
     
 f.close()
 
-shutil.rmtree(directory + '/sentiment-engine/input_data/')
+shutil.rmtree(stanford_directory + '/input_data/')
 
 stop = timeit.default_timer()
 print "Time taken:", stop - start
@@ -146,5 +147,5 @@ data['Text_Bool'] = output_frame['Text_Bool']
 
 os.chdir('..')
 print "Writing to output file..."
-data.to_csv(output_filename)#, encoding = 'utf-8-sig')
+data.to_csv(output_filename)
 print "Finished!"
